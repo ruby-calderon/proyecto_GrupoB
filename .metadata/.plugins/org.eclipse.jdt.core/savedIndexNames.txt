@@ -1,4 +1,0 @@
-INDEX VERSION 1.134+/Users/kfabianp/Downloads/proyecto_grupoB/.metadata/.plugins/org.eclipse.jdt.core
-952011895.index
-955739055.index
-1865797976.index
