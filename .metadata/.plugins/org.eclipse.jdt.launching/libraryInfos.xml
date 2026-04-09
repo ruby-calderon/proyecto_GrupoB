@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<libraryInfos>
+    <libraryInfo home="D:\CIBERTEC\INTRODUCCION A LA ALGORITMIA\PROGRAMAS\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955\jre" version="15.0.2"/>
+    <libraryInfo home="D:\MODULOS Y CICLOS\CICLO I\MODULO B\INTRODUCCION A LA ALGORITMIA\Eclipse-2020-12\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955" version="15.0.2"/>
+    <libraryInfo home="/Applications/Eclipse-ultimate.app/Contents/Eclipse/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.macosx.aarch64_21.0.10.v20260205-0638" version="21.0.10">
+        <bootpath>
+            <entry path="null"/>
+        </bootpath>
+        <extensionDirs>
+            <entry path="null"/>
+        </extensionDirs>
+        <endorsedDirs>
+            <entry path="null"/>
+        </endorsedDirs>
+    </libraryInfo>
+    <libraryInfo home="/Users/kfabianp/.sdkman/candidates/java/17.0.18-tem" version="17.0.18"/>
+    <libraryInfo home="C:\Users\roger\Documents\Eclipse\Eclipse-2020-12\Eclipse-2020-12\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955" version="15.0.2"/>
+    <libraryInfo home="/Applications/Eclipse-ultimate.app/Contents/Eclipse/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.macosx.aarch64_21.0.10.v20260205-0638/jre" version="21.0.10"/>
+    <libraryInfo home="/Users/kfabianp/.sdkman/candidates/java/17.0.12-tem" version="17.0.12"/>
+    <libraryInfo home="C:\Users\roger\Documents\Eclipse\Eclipse-2020-12\Eclipse-2020-12\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955\jre" version="15.0.2"/>
+    <libraryInfo home="/Users/kfabianp/.sdkman/candidates/java/21.0.4-tem" version="21.0.4"/>
+    <libraryInfo home="D:\CIBERTEC\INTRODUCCION A LA ALGORITMIA\PROGRAMAS\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955" version="15.0.2"/>
+    <libraryInfo home="D:\MODULOS Y CICLOS\CICLO I\MODULO B\INTRODUCCION A LA ALGORITMIA\Eclipse-2020-12\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955\jre" version="15.0.2"/>
+</libraryInfos>
