@@ -15,12 +15,13 @@ import javax.swing.ImageIcon;
 
 public class AcercaDeTienda extends JDialog implements ActionListener {
 
+
 	private static final long serialVersionUID = 1L;
 	private final JPanel contentPanel = new JPanel();
 	private JLabel lblTienda;
 	private JButton btnCerrar;
 	private JLabel lblAutor;
-	private JLabel lblAño;
+	private JLabel lblAï¿½o;
 	private JLabel lblLimaPeru;
 	private JLabel lblJenniffer;
 	private JLabel lblBruce;
@@ -74,10 +75,10 @@ public class AcercaDeTienda extends JDialog implements ActionListener {
 		lblAutor.setBounds(26, 54, 106, 44);
 		contentPanel.add(lblAutor);
 
-		lblAño = new JLabel("2026");
-		lblAño.setFont(new Font("Tahoma", Font.BOLD, 14));
-		lblAño.setBounds(321, 219, 40, 15);
-		contentPanel.add(lblAño);
+		lblAï¿½o = new JLabel("2026");
+		lblAï¿½o.setFont(new Font("Tahoma", Font.BOLD, 14));
+		lblAï¿½o.setBounds(321, 219, 40, 15);
+		contentPanel.add(lblAï¿½o);
 
 		lblLimaPeru = new JLabel("Lima, Per\u00FA");
 		lblLimaPeru.setFont(new Font("Tahoma", Font.PLAIN, 12));
