@@ -17,9 +17,7 @@ public class ConfigurarObsequios extends JDialog {
 	private JButton btnAceptar;
 	private JButton btnCancelar;
 
-	/**
-	 * Launch the application.
-	 */
+	
 	public static void main(String[] args) {
 		try {
 			ConfigurarObsequios dialog = new ConfigurarObsequios();
