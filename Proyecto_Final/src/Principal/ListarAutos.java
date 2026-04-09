@@ -1,18 +1,18 @@
 package Principal;
 
 import java.awt.EventQueue;
+import java.awt.Font;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
+import javax.swing.JButton;
 import javax.swing.JDialog;
+import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
-import javax.swing.JButton;
-import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
-import javax.swing.JPanel;
-import java.awt.Font;
 import javax.swing.UIManager;
 
-public class DialogoListar extends JDialog implements ActionListener {
+public class ListarAutos extends JDialog implements ActionListener {
 	
 	private static final long serialVersionUID = 1L;
 	private JScrollPane scrollPane;
@@ -34,7 +34,7 @@ public class DialogoListar extends JDialog implements ActionListener {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					DialogoListar dialog = new DialogoListar();
+					ListarAutos dialog = new ListarAutos();
 					dialog.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
 					dialog.setVisible(true);
 				}
@@ -48,7 +48,7 @@ public class DialogoListar extends JDialog implements ActionListener {
 	/**
 	 * Create the dialog.
 	 */
-	public DialogoListar() {
+	public ListarAutos() {
 		setTitle("Listar");
 		setBounds(100, 100, 466, 321);
 		getContentPane().setLayout(null);

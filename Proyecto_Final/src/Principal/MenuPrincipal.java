@@ -1,18 +1,20 @@
 package Principal;
 
-import java.awt.BorderLayout;
 import java.awt.EventQueue;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import javax.swing.JFrame;
-import javax.swing.JPanel;
-import javax.swing.border.EmptyBorder;
-import javax.swing.JMenuBar;
 import javax.swing.JMenu;
+import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
-import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
 
-public class Menu_Principal extends JFrame implements ActionListener {
+public class MenuPrincipal extends JFrame implements ActionListener {
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private JMenuBar menuProyecto;
 	private JMenu mnArchivo;
 	private JMenu mnMantenimiento;
@@ -35,7 +37,7 @@ public class Menu_Principal extends JFrame implements ActionListener {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Menu_Principal frame = new Menu_Principal();
+					MenuPrincipal frame = new MenuPrincipal();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -47,7 +49,7 @@ public class Menu_Principal extends JFrame implements ActionListener {
 	/**
 	 * Create the frame.
 	 */
-	public Menu_Principal() {
+	public MenuPrincipal() {
 		setTitle("Proyecto");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 800, 600);
@@ -102,6 +104,7 @@ public class Menu_Principal extends JFrame implements ActionListener {
 		mntmAcercaTienda.addActionListener(this);
 		mnAyuda.add(mntmAcercaTienda);
 	}
+
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource() == mntmVender) {
 			actionPerformedMntmVender(e);
@@ -128,42 +131,51 @@ public class Menu_Principal extends JFrame implements ActionListener {
 			actionPerformedMntmSalir(e);
 		}
 	}
+
 	protected void actionPerformedMntmSalir(ActionEvent e) {
 		System.exit(0);
 	}
+
 	protected void actionPerformedMntmAcercaTienda(ActionEvent e) {
-		DialogoAcercaDeTienda ventanaAcercaDeTienda= new DialogoAcercaDeTienda();
+		AcercaDeTienda ventanaAcercaDeTienda= new AcercaDeTienda();
 		ventanaAcercaDeTienda.setLocationRelativeTo(this);
 		ventanaAcercaDeTienda.setVisible(true);
 	}
+
 	protected void actionPerformedMntmConfigurarDescuentos(ActionEvent e) {
 		ConfigurarDescuento ventanaConfigurarDescuento=new ConfigurarDescuento();
 		ventanaConfigurarDescuento.setLocationRelativeTo(this);
 		ventanaConfigurarDescuento.setVisible(true);
 	}
+
 	protected void actionPerformedMntmConfigurarObsequios(ActionEvent e) {
 		ConfigurarObsequios ventanaConfigurarObsequios=new ConfigurarObsequios();
 		ventanaConfigurarObsequios.setLocationRelativeTo(this);
 		ventanaConfigurarObsequios.setVisible(true);
 	}
+
 	protected void actionPerformedMntmListarAutos(ActionEvent e) {
-		DialogoListar ventanaDialogoListar=new DialogoListar();
+		ListarAutos ventanaDialogoListar=new ListarAutos();
 		ventanaDialogoListar.setLocationRelativeTo(this);
 		ventanaDialogoListar.setVisible(true);
 	}
+
 	protected void actionPerformedMntmConsultaAutos(ActionEvent e) {
 		ConsultarAuto ventanaConsultarAuto=new ConsultarAuto();
 		ventanaConsultarAuto.setLocationRelativeTo(this);
 		ventanaConsultarAuto.setVisible(true);
 	}
+
 	protected void actionPerformedMntmModificarAutos(ActionEvent e) {
 		ModificarAuto ventanaModificarAuto=new ModificarAuto();
 		ventanaModificarAuto.setLocationRelativeTo(this);
 		ventanaModificarAuto.setVisible(true);
 	}
+
 	protected void actionPerformedMntmVender(ActionEvent e) {
-		DialogoVenta ventanaDialogoVenta=new DialogoVenta();
+		VenderAutos ventanaDialogoVenta=new VenderAutos();
 		ventanaDialogoVenta.setLocationRelativeTo(this);
 		ventanaDialogoVenta.setVisible(true);
 	}
+	
 }

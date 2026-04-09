@@ -1,19 +1,19 @@
 package Principal;
 
 import java.awt.BorderLayout;
+import java.awt.Font;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JDialog;
-import javax.swing.JPanel;
-import javax.swing.border.EmptyBorder;
 import javax.swing.JLabel;
+import javax.swing.JPanel;
 import javax.swing.UIManager;
-import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
-import java.awt.Font;
-import javax.swing.ImageIcon;
+import javax.swing.border.EmptyBorder;
 
-public class DialogoAcercaDeTienda extends JDialog implements ActionListener {
+public class AcercaDeTienda extends JDialog implements ActionListener {
 
 	private static final long serialVersionUID = 1L;
 	private final JPanel contentPanel = new JPanel();
@@ -41,7 +41,7 @@ public class DialogoAcercaDeTienda extends JDialog implements ActionListener {
 			e.printStackTrace();
 		}
 		try {
-			DialogoAcercaDeTienda dialog = new DialogoAcercaDeTienda();
+			AcercaDeTienda dialog = new AcercaDeTienda();
 			dialog.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
 			dialog.setVisible(true);
 		}
@@ -53,7 +53,7 @@ public class DialogoAcercaDeTienda extends JDialog implements ActionListener {
 	/**
 	 * Create the dialog.
 	 */
-	public DialogoAcercaDeTienda() {
+	public AcercaDeTienda() {
 		setTitle("Acerca de Tienda");
 		setBounds(100, 100, 500, 400);
 		getContentPane().setLayout(new BorderLayout());
@@ -112,7 +112,7 @@ public class DialogoAcercaDeTienda extends JDialog implements ActionListener {
 		contentPanel.add(lblJhonny);
 		
 		lblFoto = new JLabel("");
-		lblFoto.setIcon(new ImageIcon(DialogoAcercaDeTienda.class.getResource("/imagenes/autosinfondo4.png")));
+		lblFoto.setIcon(new ImageIcon(AcercaDeTienda.class.getResource("/imagenes/acerca-de-tienda.png")));
 		lblFoto.setBounds(208, 65, 225, 187);
 		contentPanel.add(lblFoto);
 		

@@ -1,25 +1,26 @@
 package Principal;
 
-import java.awt.BorderLayout;
-import java.awt.FlowLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
+import javax.swing.DefaultComboBoxModel;
 import javax.swing.JButton;
+import javax.swing.JComboBox;
 import javax.swing.JDialog;
-import javax.swing.JPanel;
-import javax.swing.border.EmptyBorder;
 import javax.swing.JLabel;
-import javax.swing.JTextField;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
-import javax.swing.JComboBox;
-import javax.swing.DefaultComboBoxModel;
-import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
+import javax.swing.JTextField;
 
-public class DialogoVenta extends JDialog implements ActionListener {
+public class VenderAutos extends JDialog implements ActionListener {
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private JButton btnProcesar;
 	private JScrollPane scp;
-	private JComboBox cboModelo;
+	private JComboBox<String> cboModelo;
 	private JLabel lblModelo;
 	private JLabel lblPrecio;
 	private JLabel lblCantidad;
@@ -33,7 +34,7 @@ public class DialogoVenta extends JDialog implements ActionListener {
 	 */
 	public static void main(String[] args) {
 		try {
-			DialogoVenta dialog = new DialogoVenta();
+			VenderAutos dialog = new VenderAutos();
 			dialog.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
 			dialog.setVisible(true);
 		} catch (Exception e) {
@@ -44,7 +45,7 @@ public class DialogoVenta extends JDialog implements ActionListener {
 	/**
 	 * Create the dialog.
 	 */
-	public DialogoVenta() {
+	public VenderAutos() {
 		setTitle("Venta de Veh\u00EDculos");
 		setBounds(100, 100, 527, 368);
 		getContentPane().setLayout(null);
@@ -61,9 +62,9 @@ public class DialogoVenta extends JDialog implements ActionListener {
 		txtS.setEditable(false);
 		scp.setViewportView(txtS);
 		
-		cboModelo = new JComboBox();
+		cboModelo = new JComboBox<>();
 		cboModelo.setBounds(143, 23, 110, 23);
-		cboModelo.setModel(new DefaultComboBoxModel(new String[] {"Toyota Corolla", "Honda Civic", "Hyundai Elantra", "Kia Cerato", "Mazda 3"}));
+		cboModelo.setModel(new DefaultComboBoxModel<>(new String[] {"Toyota Corolla", "Honda Civic", "Hyundai Elantra", "Kia Cerato", "Mazda 3"}));
 		getContentPane().add(cboModelo);
 		
 		lblModelo = new JLabel("Modelo");

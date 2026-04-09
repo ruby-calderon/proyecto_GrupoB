@@ -1,20 +1,19 @@
 package Principal;
 
 import java.awt.BorderLayout;
-
-import javax.swing.JButton;
-import javax.swing.JDialog;
-import javax.swing.JPanel;
-import javax.swing.border.EmptyBorder;
-import javax.swing.JLabel;
-import javax.swing.JComboBox;
-import javax.swing.JTextField;
-import javax.swing.DefaultComboBoxModel;
-import javax.swing.UIManager;
-import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
-import java.awt.Color;
 import java.awt.SystemColor;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.DefaultComboBoxModel;
+import javax.swing.JButton;
+import javax.swing.JComboBox;
+import javax.swing.JDialog;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+import javax.swing.UIManager;
+import javax.swing.border.EmptyBorder;
 
 public class ModificarAuto extends JDialog implements ActionListener {
 
@@ -79,7 +78,7 @@ public class ModificarAuto extends JDialog implements ActionListener {
 
 		cboModelo = new JComboBox<String>();
 		cboModelo.addActionListener(this);
-		cboModelo.setModel(new DefaultComboBoxModel(new String[] {"soluto-20555", "c-002", "c-003", "c-004", "c-005"}));
+		cboModelo.setModel(new DefaultComboBoxModel<>(new String[] {"soluto-20555", "c-002", "c-003", "c-004", "c-005"}));
 		cboModelo.setBounds(66, 8, 218, 20);
 		contentPanel.add(cboModelo);
 
