@@ -1,0 +1,26 @@
+.metadata/
+.DS_Store
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# IDEs
+.vscode/
+.idea/
+*.iml
+
+# Java build outputs
+bin/
+build/
+out/
+target/
+*.class
+
+# Node/npm
+node_modules/
+dist/
+
+# Gradle
+.gradle/
