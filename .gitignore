@@ -1,9 +1,10 @@
 .DS_Store
 
 # Eclipse
-# .project
-# .classpath
-# .settings/
+.metadata/
+.project
+.classpath
+.settings/
 
 # IDEs
 .vscode/
