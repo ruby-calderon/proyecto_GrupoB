@@ -27,7 +27,7 @@ public class MenuPrincipal extends JFrame implements ActionListener {
 	private JMenuItem mntmAcercaTienda;
 	private JMenuItem mntmConsultaAutos;
 
-	// Datos mínimos de la primera marca de auto
+	// Datos mï¿½nimos de la primera marca de auto
 	public static String marca0 = "TOYOTA";
 	public static String modelo0 = "COROLLA";
 	public static double precio0 = 22700;
@@ -35,7 +35,7 @@ public class MenuPrincipal extends JFrame implements ActionListener {
 	public static double stock0 = 15;
 	public static double garantia0 = 5;
 
-	// Datos mínimos de la segunda marca de auto
+	// Datos mï¿½nimos de la segunda marca de auto
 	public static String marca1 = "HYUNDAI";
 	public static String modelo1 = "ELANTRA";
 	public static double precio1 = 25200;
@@ -43,7 +43,7 @@ public class MenuPrincipal extends JFrame implements ActionListener {
 	public static double stock1 = 15;
 	public static double garantia1 = 5;
 
-	// Datos mínimos de la tercera marca de auto
+	// Datos mï¿½nimos de la tercera marca de auto
 	public static String marca2 = "HONDA";
 	public static String modelo2 = "CIVIC";
 	public static double precio2 = 30500;
@@ -51,7 +51,7 @@ public class MenuPrincipal extends JFrame implements ActionListener {
 	public static double stock2 = 15;
 	public static double garantia2 = 5;
 
-	// Datos mínimos de la cuarta marca de auto
+	// Datos mï¿½nimos de la cuarta marca de auto
 	public static String marca3 = "KIA";
 	public static String modelo3 = "CERATO";
 	public static double precio3 = 27100;
@@ -59,13 +59,19 @@ public class MenuPrincipal extends JFrame implements ActionListener {
 	public static double stock3 = 15;
 	public static double garantia3 = 5;
 
-	// Datos mínimos de la quinta marca de auto
+	// Datos mï¿½nimos de la quinta marca de auto
 	public static String marca4 = "MAZDA";
 	public static String modelo4 = "CX5";
 	public static double precio4 = 35200;
 	public static double torque4 = 215;
 	public static double stock4 = 15;
 	public static double garantia4 = 5;
+	
+	// Porcentajes de descuento
+	public static double porcentaje1 = 7.5;
+	public static double porcentaje2 = 10.0;
+	public static double porcentaje3 = 12.5;
+	public static double porcentaje4 = 15.0;
 
 	/**
 	 * Launch the application.
